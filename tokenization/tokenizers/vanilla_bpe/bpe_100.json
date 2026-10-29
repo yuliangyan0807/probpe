@@ -1,0 +1,505 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "<cls>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "<pad>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "<eos>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "<unk>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "<null_1>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 5,
+      "content": "<mask>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": null,
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "SpecialToken": {
+          "id": "<cls>",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "<eos>",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 1
+        }
+      }
+    ],
+    "special_tokens": {
+      "<cls>": {
+        "id": "<cls>",
+        "ids": [
+          0
+        ],
+        "tokens": [
+          "<cls>"
+        ]
+      },
+      "<eos>": {
+        "id": "<eos>",
+        "ids": [
+          2
+        ],
+        "tokens": [
+          "<eos>"
+        ]
+      }
+    }
+  },
+  "decoder": {
+    "type": "Fuse"
+  },
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "<unk>",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "<cls>": 0,
+      "<pad>": 1,
+      "<eos>": 2,
+      "<unk>": 3,
+      "<null_1>": 4,
+      "<mask>": 5,
+      "-": 6,
+      ".": 7,
+      "A": 8,
+      "B": 9,
+      "C": 10,
+      "D": 11,
+      "E": 12,
+      "F": 13,
+      "G": 14,
+      "H": 15,
+      "I": 16,
+      "K": 17,
+      "L": 18,
+      "M": 19,
+      "N": 20,
+      "O": 21,
+      "P": 22,
+      "Q": 23,
+      "R": 24,
+      "S": 25,
+      "T": 26,
+      "U": 27,
+      "V": 28,
+      "W": 29,
+      "X": 30,
+      "Y": 31,
+      "Z": 32,
+      "LL": 33,
+      "AA": 34,
+      "AL": 35,
+      "VL": 36,
+      "GL": 37,
+      "EL": 38,
+      "SL": 39,
+      "GG": 40,
+      "SS": 41,
+      "EE": 42,
+      "RL": 43,
+      "DL": 44,
+      "TL": 45,
+      "AV": 46,
+      "IL": 47,
+      "KL": 48,
+      "AG": 49,
+      "VV": 50,
+      "AE": 51,
+      "KK": 52,
+      "SG": 53,
+      "AI": 54,
+      "AR": 55,
+      "PL": 56,
+      "AD": 57,
+      "AS": 58,
+      "QL": 59,
+      "AK": 60,
+      "TG": 61,
+      "VE": 62,
+      "NL": 63,
+      "FL": 64,
+      "VI": 65,
+      "VG": 66,
+      "AT": 67,
+      "KE": 68,
+      "RR": 69,
+      "VD": 70,
+      "PG": 71,
+      "PE": 72,
+      "VS": 73,
+      "IE": 74,
+      "IG": 75,
+      "ID": 76,
+      "VT": 77,
+      "RE": 78,
+      "IS": 79,
+      "AQ": 80,
+      "DG": 81,
+      "VK": 82,
+      "DE": 83,
+      "RG": 84,
+      "YL": 85,
+      "PS": 86,
+      "AF": 87,
+      "IT": 88,
+      "KG": 89,
+      "NG": 90,
+      "AP": 91,
+      "VR": 92,
+      "FG": 93,
+      "IK": 94,
+      "TS": 95,
+      "AN": 96,
+      "FS": 97,
+      "VP": 98,
+      "TE": 99
+    },
+    "merges": [
+      [
+        "L",
+        "L"
+      ],
+      [
+        "A",
+        "A"
+      ],
+      [
+        "A",
+        "L"
+      ],
+      [
+        "V",
+        "L"
+      ],
+      [
+        "G",
+        "L"
+      ],
+      [
+        "E",
+        "L"
+      ],
+      [
+        "S",
+        "L"
+      ],
+      [
+        "G",
+        "G"
+      ],
+      [
+        "S",
+        "S"
+      ],
+      [
+        "E",
+        "E"
+      ],
+      [
+        "R",
+        "L"
+      ],
+      [
+        "D",
+        "L"
+      ],
+      [
+        "T",
+        "L"
+      ],
+      [
+        "A",
+        "V"
+      ],
+      [
+        "I",
+        "L"
+      ],
+      [
+        "K",
+        "L"
+      ],
+      [
+        "A",
+        "G"
+      ],
+      [
+        "V",
+        "V"
+      ],
+      [
+        "A",
+        "E"
+      ],
+      [
+        "K",
+        "K"
+      ],
+      [
+        "S",
+        "G"
+      ],
+      [
+        "A",
+        "I"
+      ],
+      [
+        "A",
+        "R"
+      ],
+      [
+        "P",
+        "L"
+      ],
+      [
+        "A",
+        "D"
+      ],
+      [
+        "A",
+        "S"
+      ],
+      [
+        "Q",
+        "L"
+      ],
+      [
+        "A",
+        "K"
+      ],
+      [
+        "T",
+        "G"
+      ],
+      [
+        "V",
+        "E"
+      ],
+      [
+        "N",
+        "L"
+      ],
+      [
+        "F",
+        "L"
+      ],
+      [
+        "V",
+        "I"
+      ],
+      [
+        "V",
+        "G"
+      ],
+      [
+        "A",
+        "T"
+      ],
+      [
+        "K",
+        "E"
+      ],
+      [
+        "R",
+        "R"
+      ],
+      [
+        "V",
+        "D"
+      ],
+      [
+        "P",
+        "G"
+      ],
+      [
+        "P",
+        "E"
+      ],
+      [
+        "V",
+        "S"
+      ],
+      [
+        "I",
+        "E"
+      ],
+      [
+        "I",
+        "G"
+      ],
+      [
+        "I",
+        "D"
+      ],
+      [
+        "V",
+        "T"
+      ],
+      [
+        "R",
+        "E"
+      ],
+      [
+        "I",
+        "S"
+      ],
+      [
+        "A",
+        "Q"
+      ],
+      [
+        "D",
+        "G"
+      ],
+      [
+        "V",
+        "K"
+      ],
+      [
+        "D",
+        "E"
+      ],
+      [
+        "R",
+        "G"
+      ],
+      [
+        "Y",
+        "L"
+      ],
+      [
+        "P",
+        "S"
+      ],
+      [
+        "A",
+        "F"
+      ],
+      [
+        "I",
+        "T"
+      ],
+      [
+        "K",
+        "G"
+      ],
+      [
+        "N",
+        "G"
+      ],
+      [
+        "A",
+        "P"
+      ],
+      [
+        "V",
+        "R"
+      ],
+      [
+        "F",
+        "G"
+      ],
+      [
+        "I",
+        "K"
+      ],
+      [
+        "T",
+        "S"
+      ],
+      [
+        "A",
+        "N"
+      ],
+      [
+        "F",
+        "S"
+      ],
+      [
+        "V",
+        "P"
+      ],
+      [
+        "T",
+        "E"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "actual_vocab_size": 100,
+  "config": {
+    "invalid_residue_policy": "error",
+    "max_sequence_length": null,
+    "max_sequences": null,
+    "max_token_length": null,
+    "min_frequency": 2,
+    "min_sequence_length": 1,
+    "vocab_size": 100
+  },
+  "initial_alphabet": [
+    "L",
+    "A",
+    "G",
+    "V",
+    "S",
+    "E",
+    "R",
+    "T",
+    "I",
+    "D",
+    "P",
+    "K",
+    "Q",
+    "N",
+    "F",
+    "Y",
+    "M",
+    "H",
+    "W",
+    "C",
+    "X",
+    "B",
+    "U",
+    "Z",
+    "O",
+    ".",
+    "-"
+  ],
+  "requested_vocab_size": 100,
+  "sequence_stats": {
+    "records_read": 550122,
+    "residues_used": 195055067,
+    "sequences_too_long": 0,
+    "sequences_too_short": 0,
+    "sequences_used": 550122,
+    "sequences_with_invalid_residues": 0
+  },
+  "source_path": "/mnt/data/dataset/afdb/swissprot",
+  "special_tokens": [
+    "<cls>",
+    "<pad>",
+    "<eos>",
+    "<unk>",
+    "<null_1>",
+    "<mask>"
+  ],
+  "tokenizer_type": "vanilla_bpe"
+}

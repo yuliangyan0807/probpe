@@ -1,0 +1,16 @@
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local datasets and experiment outputs
+data/
+results/
+*.log
+
+# Local environments and editor settings
+.env
+.venv/
+.vscode/
+.idea/
+.DS_Store
